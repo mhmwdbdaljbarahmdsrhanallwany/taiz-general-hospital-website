@@ -1,5 +1,4 @@
-<!-- شريط الطوارئ العلوي -->
-    <div class="top-bar">
+ <div class="top-bar">
         <div class="top-bar-content">
             <div class="contact-info-top">
                 <span><i class="fas fa-phone-alt"></i> 781604748</span>

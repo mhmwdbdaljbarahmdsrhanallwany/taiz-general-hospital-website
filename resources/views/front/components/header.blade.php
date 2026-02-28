@@ -1,4 +1,4 @@
-  <header class="main-header">
+<header class="main-header">
         <div class="header-content">
             <div class="logo">
                 <div class="logo-icon">
