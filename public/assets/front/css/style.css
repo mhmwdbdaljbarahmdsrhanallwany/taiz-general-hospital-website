@@ -103,9 +103,9 @@
             z-index: 1003;
         }
         .logo-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #1A4D8C, #4A90E2);
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #ffffff, #5faaff);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -141,8 +141,8 @@
         }
         .logo-text span {
             color: #4A90E2;
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 20px;
+            font-weight: 900;
         }
         /* القائمة الرئيسية */
         .nav-container {
@@ -525,3 +525,220 @@
             margin: 20px;
         }
     
+        /* !  =====================   */
+    /* البانر الرئيسي */
+        .hero-section {
+            position: relative;
+            min-height: 600px;
+            background: linear-gradient(135deg, #1A4D8C 0%, #4A90E2 100%);
+            overflow: hidden;
+        }
+
+        .hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path d="M10 10 L90 10 L90 90 L10 90 Z" fill="none" stroke="white" stroke-width="1"/><circle cx="50" cy="50" r="20" fill="none" stroke="white" stroke-width="1"/></svg>');
+            background-size: 50px;
+            animation: movePattern 20s linear infinite;
+        }
+
+        @keyframes movePattern {
+            from { transform: translateX(-50px) translateY(-50px); }
+            to { transform: translateX(0) translateY(0); }
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-text {
+            color: white;
+        }
+
+        .hero-text h2 {
+            font-size: 52px;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-weight: 900;
+            color: #FFD700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .hero-image {
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+        }
+
+        .hero-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: #FFD700;
+            color: #1A4D8C;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+/* تنسيق القسم بالكامل */
+       .services-section{
+        max-width: 14000px;
+        margin: 80px auto;
+        padding: 0 30px;
+       }
+
+       /* تنسيق رأس القسم (العنوان + الوصف) */
+.section-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-header h3{
+    font-size: 36px;
+      color: #1A4D8C;
+      font-weight: 900;
+      margin-bottom: 15px;
+      position: relative;
+      display: inline-block;
+}
+/* الخط الزخرفي أسفل العنوان */
+.section-header h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #1A4D8C, #4A90E2);
+            border-radius: 2px;
+        }
+        /* وصف القسم */
+        .section-header p{
+            color: #666;
+            font-size: 18px;
+        }
+        /* شبكة الخدمات */
+.services-grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)) ;
+    gap: 30px;
+
+}
+/* كرت الخدمة */
+.service-card{
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+/* الشريط العلوي المتحرك */
+.service-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(45deg,#1A4D8C, #4A90E2); 
+    transform: scaleX(0);
+    transition:  transform 0.4s;
+}
+/* عند تمرير الماوس يظهر الشريط */
+.service-card:hover::before{
+      transform: scaleX(1); 
+}
+/* تأثير ارتفاع الكرت */
+.service-card:hover{
+    transform: translateY(-10px);
+    box-shadow:  0 20px 40px rgba(26, 77, 140, 0.15); 
+}
+
+/* أيقونة الخدمة */
+.service-icon{
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #1A4D8C15, #4A90E215);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 40px;
+            color: #1A4D8C;
+            transition: all 0.4s;
+}
+
+/* عند تمرير الماوس على الكرت */
+.service-card:hover .service-icon{
+      background: linear-gradient(135deg, #1A4D8C, #4A90E2); 
+        color: white; 
+         transform: rotateY(180deg); 
+}
+/* عنوان الخدمة */
+.service-card h4{
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+}
+/* وصف الخدمة */
+.service-card p {
+        color: #666; 
+        line-height: 1.6;
+}

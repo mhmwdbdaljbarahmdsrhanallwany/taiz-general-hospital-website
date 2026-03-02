@@ -3,7 +3,7 @@
             <div class="logo">
                 <div class="logo-icon">
                     <!-- الصورة هنا ستقوم بالدوران عند تمرير الماوس -->
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%234A90E2'/%3E%3Ctext x='50' y='70' font-size='50' text-anchor='middle' fill='white' font-family='Arial'%3E🏥%3C/text%3E%3C/svg%3E" style="width: 60px; height: 60px; border-radius: 50%;" alt="مستشفى تعز العام">
+                    <img src="{{ asset('assets/front/images/d.png') }}" style="width: 65px; height: 65px; border-radius: 50%;" alt="مستشفى تعز العام">
                 </div>
                 <div class="logo-text">
                     <h1>مستشفى تعز العام</h1>
@@ -25,7 +25,7 @@
                 <ul class="nav-menu">
                     <!-- الرئيسية -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="{{ route('front.home') }}" class="nav-link">
                             <i class="fas fa-home"></i> الرئيسية
                         </a>
                     </li>
@@ -33,7 +33,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link"> عنا <i class="fas fa-chevron-down"></i> </a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item"> <i class="fas fa-history"></i> <span>نبذة عن المستشفى</span> </a>
+                            <a href="{{ route('about.about') }}" class="dropdown-item"> <i class="fas fa-history"></i> <span>نبذة عن المستشفى</span> </a>
                             <a href="#" class="dropdown-item"> <i class="fas fa-eye"></i> <span>الرؤية والرسالة</span> </a>
                             <a href="#" class="dropdown-item"> <i class="fas fa-certificate"></i> <span>الشهادات والاعتمادات</span> </a>
                             <a href="#" class="dropdown-item"> <i class="fas fa-trophy"></i> <span>الجوائز والتكريمات</span> </a>
