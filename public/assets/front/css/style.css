@@ -355,6 +355,7 @@
                 width: 700px;
                 right: -100px;
             }
+         
         }
         
         @media screen and (max-width: 992px) {
@@ -742,3 +743,102 @@
         color: #666; 
         line-height: 1.6;
 }
+
+  /* قسم الأطباء */
+    /* قسم الأطباء */
+        .doctors-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 80px 0;
+        }
+
+        .doctors-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .doctor-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.4s;
+            position: relative;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .doctor-img {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #1A4D8C, #4A90E2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .doctor-img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+
+        .doctor-card:hover .doctor-img::before {
+            left: 100%;
+        }
+
+        .doctor-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .doctor-info h4 {
+            color: #1A4D8C;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .doctor-info p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .doctor-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .doctor-social a {
+            width: 40px;
+            height: 40px;
+            background: #f0f2f5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1A4D8C;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .doctor-social a:hover {
+            background: #1A4D8C;
+            color: white;
+            transform: translateY(-3px);
+        }

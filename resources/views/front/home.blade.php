@@ -111,4 +111,79 @@
         </div>
     </section>
 
+<!-- قسم الأطباء -->
+    <section class="doctors-section" id="doctors">
+        <div class="doctors-container">
+            <div class="section-header">
+                <h3>كادرنا الطبي</h3>
+                <p>نخبة من أمهر الأطباء والاستشاريين في جميع التخصصات</p>
+            </div>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-img">
+                        <!-- صورة الدكتور -->
+                        <img src="{{ asset('assets/front/images/d.png') }}" alt="">
+                    </div>
+                    <div class="doctor-info">
+                        <h4>د. أحمد محمد</h4>
+                        <p>استشاري جراحة القلب</p>
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-img">
+                        <img src="{{ asset('assets/front/images/d.png') }}" alt="">
+                    </div>
+                    <div class="doctor-info">
+                        <h4>د. فاطمة علي</h4>
+                        <p>استشارية أمراض النساء</p>
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-img">
+                        <!-- صورة الدكتور -->
+                    </div>
+                    <div class="doctor-info">
+                        <h4>د. خالد عبدالله</h4>
+                        <p>استشاري الأطفال</p>
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-img">
+                        <!-- صورة الدكتور -->
+                    </div>
+                    <div class="doctor-info">
+                        <h4>د. محمد حسين</h4>
+                        <p>استشاري العظام</p>
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </section>
+
+    
 @endsection

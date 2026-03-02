@@ -25,6 +25,17 @@
 
     <div class="overlay" id="overlay"></div>
 
+
+
+     <!-- أزرار ثابتة للتواصل السريع -->
+    <div style="position: fixed; bottom: 30px; left: 30px; z-index: 999;">
+        <a href="#" style="background: #25D366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px; box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4); transition: transform 0.3s; margin-bottom: 15px;">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" style="background: #1A4D8C; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px; box-shadow: 0 5px 20px rgba(26, 77, 140, 0.4); transition: transform 0.3s;">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
     <script src="{{ asset('assets/front/js/main.js') }}"></script>
 </body>
 </html> 
