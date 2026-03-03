@@ -36,6 +36,8 @@
             <i class="fas fa-phone-alt"></i>
         </a>
     </div>
+
+    @include("front.components.footer")
     <script src="{{ asset('assets/front/js/main.js') }}"></script>
 </body>
 </html> 

@@ -842,3 +842,121 @@
             color: white;
             transform: translateY(-3px);
         }
+    /* <!-- الفوتر --> */
+    footer {
+        background: linear-gradient(135deg, #1A4D8C, #0a2b4e);
+        color: white;
+        padding: 60px 0 20px ;
+    }
+
+    .footer-content{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+    }
+     .footer-col h4{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        position: relative;
+     }
+      .footer-col h4::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        right: 0;
+        width: 50px;
+        height: 3px;
+        background: #4A90E2;
+      }
+      .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+    
+        .footer-col ul li a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s, padding-right 0.3s;
+        }
+     .footer-col ul li a:hover {
+            color: #4A90E2;
+            padding-right: 5px;
+        }
+       .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: rgba(255,255,255,0.8);
+        }
+         .contact-info i {
+            width: 30px;
+            color: #4A90E2;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* التجاوب مع الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h2 {
+                font-size: 36px;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .appointment-form {
+                grid-template-columns: 1fr;
+                padding: 30px;
+            }
+
+            .form-group textarea,
+            .submit-btn {
+                grid-column: span 1;
+            }
+        }
+          /* تأثيرات إضافية */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #1A4D8C, #4A90E2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
